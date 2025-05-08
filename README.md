@@ -30,7 +30,8 @@ pip install -r requirements.txt
 ### Replace the following MySQL and Cloudinary credentials with your own before running the application.
 
 ```bash
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:%s@Your_MySQL_user/flight?charset=utf8mb4" % quote("Your_password")
+app.secret_key = 'your_secret_name'
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:%s@your_MySQL_user/flight?charset=utf8mb4" % quote("your_password")
 
 
 cloudinary.config(
