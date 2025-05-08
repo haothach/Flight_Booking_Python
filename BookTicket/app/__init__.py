@@ -7,16 +7,18 @@ from flask_login import LoginManager
 
 app = Flask(__name__)
 
-app.secret_key = 'thachnhsdfasdfgqw'
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:%s@localhost/flight?charset=utf8mb4" % quote("123456")
+app.secret_key = 'your_secret_name'
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:%s@your_MySQL_user/flight?charset=utf8mb4" % quote("your_password")
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = True
 app.config["NUMBER_ROWS"] = 6
 
 
 db = SQLAlchemy(app)
 
-cloudinary.config(cloud_name='dnoubiojc',
-                  api_key='719948317126525',
-                  api_secret='CHYBjymue2PW038ILQrwUQD6XfY')
+cloudinary.config(
+    cloud_name='your_cloud_name',
+    api_key='your_api_key',
+    api_secret='your_api_secret'
+)
 
 login = LoginManager(app)
