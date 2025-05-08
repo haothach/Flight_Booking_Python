@@ -1,6 +1,6 @@
 # Flight Booking System
 
-This is a **Flight Booking System** built with **Python** and **MySQL**. The system allows users to search for flights, book tickets, and manage bookings. It is designed to provide a basic interface to interact with flight data stored in a MySQL database.
+This is a **Flight Booking System** built with **Python**, **MySQL**, and **JavaScript**. The system allows users to search for flights, book tickets, and manage bookings. It is designed to provide a web-based interface to interact with flight data stored in a MySQL database.
 
 ## Features
 
